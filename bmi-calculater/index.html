@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="shortcut icon" href="https://cdn2.iconfinder.com/data/icons/fitness-8/512/fitness-color-16-512.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="wrapper">
+            <h1 id="title">BMI Calculator</h1>
+
+            <div class="input-wrapper">
+                <div>
+                    <label for="height-input">height (m)</label>
+                    <input type="number" id="height-input" placeholder="Enter your height" autofocus>
+                </div>
+                <br>
+                <div>
+                    <label for="weight-input">weight (kg)</label>
+                    <input type="number" id="weight-input" placeholder="Enter your weight">
+                </div>
+            </div>
+
+            <button id="cal-btn" onclick="calculate()">Calculate</button>
+            <button id="reset-btn" onclick="reset()">Reset</button>
+
+            <div style="text-align: center;">
+                <br>
+                <p  id="result">Press Calculate Button for Result!</p>
+                <p  id="warn">...</p>
+            </div>
+        </div>
+    </div>
+        
+
+    <script src="app.js"></script>
+</body>
+</html>
