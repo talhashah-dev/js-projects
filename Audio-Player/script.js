@@ -1,12 +1,11 @@
 let music = document.getElementById("song");
-let image = document.getElementById("image");
+let images = document.querySelectorAll("image");
 
-image.onclick = function(){
+
+let play = function() {
     if(music.paused){
         music.play();
-        image.src="./images/pause.jpg"
-    }else{
+    }else if(music.played) {
         music.pause();
-        image.src="./images/play.jpg"
     }
-}
+};
