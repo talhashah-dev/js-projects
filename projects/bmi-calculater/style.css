@@ -5,11 +5,12 @@
 }
 
 body{
-    background-color: #CA558C;
     display: flex;
     justify-content: center;
     align-items: center;
     font-family: sans-serif;
+    background: rgb(242,59,59);
+    background: linear-gradient(276deg, rgba(242,59,59,1) 0%, rgba(48,130,227,1) 100%);
 }
 
 .container{

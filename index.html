@@ -1,221 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="description"
-      content="JavaScript Projects | Vanilla JavaScript Based Projects"
-    />
-    <meta
-      name="keywords"
-      content="JavaScript Projects, Word Counter, Songify, Music Player, HTML, CSS, JavaScript, Music, Project"
-    />
-    <meta name="author" content="Jigar Sable" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="JavaScript Projects | Vanilla JavaScript Based Projects">
+    <meta name="keywords" content="JavaScript Projects, Word Counter, Songify, Music Player, HTML, CSS, JavaScript, Music, Project">
+    <meta name="author" content="Jigar Sable">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript Projects | Jigar Sable</title>
-    <link
-      rel="shortcut icon"
-      href="./assets/site-img/favicon.png"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="./assets/site-img/favicon.png" type="image/x-icon">
     <!-- Bootstrap CSS -->
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-      crossorigin="anonymous"
-    />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <!-- font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- custom css -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
-  </head>
-  <body>
-    <!-- <header>
-        <h1>My Major JS Projects</h1>
-        <nav>
-            <ul>
-                <li><a href="./Calculater/index.html">Calculater</a></li>
-                <li><a href="./Palindrome-Checker/index.html">Palindrome Checker</a></li>
-                <li><a href="./count_down/index.html">NewYear Count Down</a></li>
-                <li><a href="./bmi-calculater/index.html">BMI Calculater</a></li>
-                <li><a href="./color-switcher/index.html">Color Switcher</a></li>
-                <li><a href="./Audio-Player/index.html">Audio Player</a></li>
-                <li><a href="./temperature-converter/index.html">Temprature Converter</a></li>
-                <li><a href="./emoje-changer/index.html">Emoje Changer</a></li>
-                <li><a href="./quiz-app/index.html">Quiz App</a></li>
-                <li><a href="./voting-system/index.html">Voting System</a></li>
-                <li><a href="./todo-app/index.html">To Do App</a></li>
-            </ul>
-        </nav>
-    </header> -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
 
-    <!-- header section starts -->
-    <header>
-      <a href="#" class="logo"> <i class="fab fa-js-square"></i> Projects</a>
-      <div id="menu" class="fas fa-bars"></div>
+<!-- header section starts -->
+<header>
+    <a href="#" class="logo"> <i class="fab fa-js-square"></i> Projects</a>
+    <div id="menu" class="fas fa-bars"></div>
 
-      <nav class="navbar">
+    <nav class="navbar">
         <ul>
-          <li><a class="active" href="#home">home</a></li>
-          <li><a href="#project">projects</a></li>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#project">Projects</a></li>
         </ul>
-      </nav>
-    </header>
-    <!-- header section ends -->
+    </nav>
+    
+</header>
+<!-- header section ends -->
 
-    <!-- home section starts -->
-    <section class="home" id="home">
-      <div class="content">
-        <h3>JavaScript Projects</h3>
-        <div id="container"></div>
-      </div>
-      <div class="image">
-        <img src="./assets/site-img/h1.png" alt="project" />
-      </div>
-    </section>
-    <!-- home section ends -->
+<!-- home section starts -->
+<section class="home" id="home">
+    <div class="content">
+    <h3>JavaScript Projects</h3>
+    </div>
+<div class="image">
+    <img src="./assets/site-img/h1.png" alt="project">
+</div>
+</section>
+<!-- home section ends -->
 
-    <!-- basic projects section starts -->
-    <section class="basic" id="project">
-      <h1 class="heading">
-        Simple <span>projects</span> made using JavaScript
-      </h1>
-
-      <div class="box-container">
-        <div class="box">
-          <img src="./assets/projects-img/digiclock.png" alt="project" />
-          <div class="content">
-            <h3>Digital Clock | Live Gradient Changing Effect</h3>
-            <p>
-              Displays live hour, minutes, seconds and milli-seconds. Gradient
-              Changing effect.
-            </p>
-            <div class="btns">
-              <a href="mini-projects/digiclock" class="btn"
-                ><i class="fas fa-eye"></i> View</a
-              >
-              <a
-                href="https://github.com/jigar-sable/JavaScript-Projects/tree/main/mini-projects/digiclock"
-                class="btn"
-                target="_blank"
-                >Code <i class="fas fa-code"></i
-              ></a>
+<!-- projects section starts -->
+<section class="basic" id="#project">
+   
+    <h1 class="heading"><span>Projects</span> made using JavaScript</h1>
+    
+    <div class="box-container">
+    <div class="box">
+        <img src="./assets/projects-img/digiclock.png" alt="project">
+        <div class="content">
+        <h3>Digital Clock | Live Gradient Changing Effect</h3>
+        <p>Displays live hour, minutes, seconds and milli-seconds. Gradient Changing effect.</p>
+        <div class="btns">
+            <a href="mini-projects/digiclock" class="btn"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/jigar-sable/JavaScript-Projects/tree/main/mini-projects/digiclock" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
             </div>
-          </div>
+            </div>
+    </div>
+
+    <div class="box">
+        <img src="./assets/projects-img/counter.png" alt="project">
+        <div class="content">
+        <h3>Simple Counter | Modern UI</h3>
+        <p>It's a basic counter made using increment and decrement functionality. Also it prevents negative values.</p>
+        <div class="btns">
+            <a href="mini-projects/simplecounter" class="btn"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/jigar-sable/JavaScript-Projects/tree/main/mini-projects/simplecounter" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+            </div>
+    </div>
+
+    <div class="box">
+        <img src="./assets/projects-img/color-switcher.png" alt="project">
+        <div class="content">
+        <h3>Background Color Switcher</h3>
+        <p>It simply switches the background color as user clicks on the button. Colors stored in array.</p>
+        <div class="btns">
+            <a href="mini-projects/bgcolor-switcher" class="btn"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/jigar-sable/JavaScript-Projects/tree/main/mini-projects/bgcolor-switcher" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+            </div>
+    </div>
+
+    <div class="box">
+        <img src="./assets/projects-img/emoji-flicker.png" alt="project">
+        <div class="content">
+        <h3>Emoji Flicker | Something Lazy Fun</h3>
+        <p>Flickers the emoji as happy to sad and vice versa as we click on it. Do checkout once.</p>
+        <div class="btns">
+            <a href="mini-projects/emoji-flicker" class="btn"><i class="fas fa-eye"></i> View</a>
+            <a href="https://github.com/jigar-sable/JavaScript-Projects/tree/main/mini-projects/emoji-flicker" class="btn" target="_blank">Code <i class="fas fa-code"></i></a>
+            </div>
+            </div>
+    </div>
+
+    </div>
+</section>
+<!-- projects section ends -->
+
+<!-- footer strated -->
+<!-- <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved | JavaScript Projects <span>Made with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jigar-sable/" target="_blank">Jigar</a>
+          </span></p>
+          
         </div>
-
-        <div class="box">
-          <img src="./assets/projects-img/counter.png" alt="project" />
-          <div class="content">
-            <h3>Simple Counter | Modern UI</h3>
-            <p>
-              It's a basic counter made using increment and decrement
-              functionality. Also it prevents negative values.
-            </p>
-            <div class="btns">
-              <a href="mini-projects/simplecounter" class="btn"
-                ><i class="fas fa-eye"></i> View</a
-              >
-              <a
-                href="https://github.com/jigar-sable/JavaScript-Projects/tree/main/mini-projects/simplecounter"
-                class="btn"
-                target="_blank"
-                >Code <i class="fas fa-code"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="box">
-          <img src="./assets/projects-img/color-switcher.png" alt="project" />
-          <div class="content">
-            <h3>Background Color Switcher</h3>
-            <p>
-              It simply switches the background color as user clicks on the
-              button. Colors stored in array.
-            </p>
-            <div class="btns">
-              <a href="mini-projects/bgcolor-switcher" class="btn"
-                ><i class="fas fa-eye"></i> View</a
-              >
-              <a
-                href="https://github.com/jigar-sable/JavaScript-Projects/tree/main/mini-projects/bgcolor-switcher"
-                class="btn"
-                target="_blank"
-                >Code <i class="fas fa-code"></i
-              ></a>
-            </div>
-          </div>
-        </div>
-
-        <div class="box">
-          <img src="./assets/projects-img/emoji-flicker.png" alt="project" />
-          <div class="content">
-            <h3>Emoji Flicker | Something Lazy Fun</h3>
-            <p>
-              Flickers the emoji as happy to sad and vice versa as we click on
-              it. Do checkout once.
-            </p>
-            <div class="btns">
-              <a href="mini-projects/emoji-flicker" class="btn"
-                ><i class="fas fa-eye"></i> View</a
-              >
-              <a
-                href="https://github.com/jigar-sable/JavaScript-Projects/tree/main/mini-projects/emoji-flicker"
-                class="btn"
-                target="_blank"
-                >Code <i class="fas fa-code"></i
-              ></a>
-            </div>
-          </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="linkedin" href="https://www.linkedin.com/in/jigar-sable/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+            <li><a class="twitter" href="https://twitter.com/jigar_sable" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a class="github" href="https://github.com/jigar-sable" target="_blank"><i class="fab fa-github"></i></a></li> 
+            <li><a class="youtube" href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
+            <li><a class="instagram" href="https://instagram.com/jigarsable.dev" target="_blank"><i class="fab fa-instagram"></i></a></li> 
+          </ul>
         </div>
       </div>
-    </section>
-    <!-- basic projects section ends -->
+    </div>
+</footer> -->
+<!-- footer ended -->
 
-    <!-- footer strated -->
-    <!-- <footer class="site-footer">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-8 col-sm-6 col-xs-12">
-              <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved | JavaScript Projects <span>Made with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jigar-sable/" target="_blank">Jigar</a>
-              </span></p>
-              
-            </div>
-            <div class="col-md-4 col-sm-6 col-xs-12">
-              <ul class="social-icons">
-                <li><a class="linkedin" href="https://www.linkedin.com/in/jigar-sable/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-                <li><a class="twitter" href="https://twitter.com/jigar_sable" target="_blank"><i class="fab fa-twitter"></i></a></li>
-                <li><a class="github" href="https://github.com/jigar-sable" target="_blank"><i class="fab fa-github"></i></a></li> 
-                <li><a class="youtube" href="#" target="_blank"><i class="fab fa-youtube"></i></a></li>
-                <li><a class="instagram" href="https://instagram.com/jigarsable.dev" target="_blank"><i class="fab fa-instagram"></i></a></li> 
-              </ul>
-            </div>
-          </div>
-        </div>
-    </footer> -->
-    <!-- footer ended -->
+<!-- scroll top btn -->
+<a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
 
-    <!-- scroll top btn -->
-    <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+<!-- jquery cdn -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<!-- custom js -->
+<!-- <script src="./assets/js/projects.js"></script> -->
+<script src="./assets/js/script.js"></script>
 
-    <!-- jquery cdn -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script>
-    <!-- custom js -->
-    <!-- <script src="./assets/js/projects.js"></script> -->
-    <script src="./assets/js/script.js"></script>
-  </body>
+</body>
 </html>
