@@ -1,0 +1,441 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: rgba(252, 252, 253, 0.8);
+  height: 44px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 12px 16px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: rgb(70, 70, 70);
+  padding: 12px 0;
+  transition: color 0.3s;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+.nav-links li a:hover {
+  color: black;
+}
+
+.nav-links i {
+  color: rgb(30, 30, 30);
+  font-size: 18px;
+  transition: color 0.3;
+}
+
+.nav-links i:hover {
+  color: black;
+}
+
+.trade-reward {
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  color: rgb(70, 70, 70);
+  position: relative;
+}
+
+.trade-reward a {
+  text-decoration: none;
+  color: rgb(0, 89, 255);
+}
+
+.trade-reward a:hover {
+  text-decoration: underline;
+}
+
+sup {
+  font-size: 12px;
+  color: rgb(70, 70, 70);
+  margin: 0 2px;
+  cursor: pointer;
+}
+
+sup:hover {
+  color: rgb(0, 89, 255);
+  text-decoration: underline !important;
+}
+
+.trade-reward i {
+  color: rgb(0, 89, 255);
+  font-size: 10px;
+  margin-left: 4px;
+  cursor: pointer;
+}
+
+/* styling for recently added banner  */
+
+.messi-banner {
+  height: 600px;
+  background-size: auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  margin-bottom: -55px;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.background-video1 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.messi-banner-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+}
+
+.messi-banner-content img { 
+  display: block;
+  margin-top: 60px;
+  margin-bottom: -45px;
+}
+
+.messi-banner-content a {
+  margin-top: 310px;
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: black;
+  height: 600px;
+  background-image: url("./Assests/images/hero_iphone14pro.jpg");
+  background-size: auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 14px;
+}
+
+.banner2 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: black;
+  height: 600px;
+  background-image: url("./Assests/images/hero_iphone14.jpg");
+  background-size: auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  margin-bottom: 14px;
+}
+
+.banner2-content {
+  color: #000;
+  margin-top: 60px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  z-index: 1;
+}
+
+.banner3 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  background-color: black;
+  height: 600px;
+  background-image: url("./Assests/images/hero_swiped.jpg");
+  background-size: auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.banner3-content {
+  color: white;
+  margin-top: 60px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  z-index: 1;
+  position: relative;
+  bottom: 60px;
+}
+
+.banner3-content-a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.banner3-content i {
+  color: white;
+  font-size: 10px;
+  margin-left: 6px;
+}
+
+.banner-content {
+  color: #fff;
+  margin-top: 60px;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  z-index: 1;
+}
+
+.banner-content-h1 {
+  font-size: 52px;
+}
+
+.banner-content-p {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.banner-content-a {
+  text-decoration: none;
+  color: rgb(0, 162, 255);
+  font-size: 20px;
+  margin: 0 20px;
+}
+
+.banner-content-a:hover,
+.banner3-content-a:hover {
+  text-decoration: underline;
+}
+
+.banner-content i,
+.banner2-content i {
+  color: rgb(0, 162, 255);
+  font-size: 10px;
+  margin-left: 6px;
+}
+
+.banners-container {
+  /* margin-top: -10px; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 0 10px;
+}
+
+.banner-box {
+  width: 600px;
+  height: 580px;
+  margin-top: 14px;
+  text-align: center;
+}
+
+.banner-box-content1 {
+  font-family: sans-serif;
+  margin-top: 50px;
+}
+
+.banner-box-content h1 {
+  font-size: 38px;
+  color: #222;
+}
+
+.banner-box-content1 p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+.banner-box-content1 a {
+  font-size: 16px;
+}
+
+.banner-box-content1 i {
+  font-size: 12px;
+  margin-left: 8px;
+}
+
+.banner-box-content2 {
+  font-family: sans-serif;
+  margin-top: 400px;
+}
+
+.banner-box-content2 p {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+}
+
+#box-p {
+  color: #757575;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.banner-content-p img {
+  height: 30px;
+  position: relative;
+  top: 10px;
+}
+
+.box1 {
+  background-image: url("./Assests/images/promo_macbook_air.jpg");
+  background-size: auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.box2 {
+  background-image: url("./Assests/images/promo_apple_vision_pro.jpg");
+  background-size: auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.box3 {
+  background-image: url("./Assests/images/promo_apple_watch_series_8.jpg");
+  background-size: auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.box4 {
+  background-image: url("./Assests/images/promo_bts2023.jpg");
+  background-size: auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.box5 {
+  background-image: url("./Assests/images/promo_ipadpro.jpg");
+  background-size: auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.box6 {
+  background-image: url("./Assests/images/tile__cauwwcyyn9hy_large.jpg");
+  background-size: auto;
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.box1,
+.box2 {
+  flex-basis: calc(50% - 10px);
+}
+
+.box3,
+.box4 {
+  flex-basis: calc(50% - 10px);
+}
+
+.box5,
+.box6 {
+  flex-basis: calc(50% - 10px);
+}
+
+.footer {
+  margin-top: 20px;
+  background-color: #f5f5f7;
+  height: auto;
+  text-align: left;
+  padding: 30px 180px;
+  font-family: sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.footer p {
+  color: #757575;
+  margin: 10px 0;
+}
+#a-color-gray {
+  color: #0009;
+}
+
+.footer hr {
+  color: #757575;
+  margin: 20px 0;
+}
+
+.footer-end p {
+  display: inline-block;
+}
+
+.block-a {
+  display: block;
+  line-height: 28px;
+  text-decoration: none;
+  color: #757575;
+}
+
+.block-a:hover {
+  text-decoration: underline;
+}
+
+.footer-end hr {
+  color: #757575;
+  margin: 1px 0;
+}
+
+.footer-end-link {
+  text-decoration: none;
+  color: #555;
+  font-size: 12px;
+  margin-left: 30px;
+}
+
+.footer-end-link:hover {
+  text-decoration: underline;
+}
+
+.columns-contaner {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* styling for scroll bar */
+
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

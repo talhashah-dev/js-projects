@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./Assests/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="slider.js"></script>
+    <title>Apple</title>
+    
+    <style>
+
+        /* styling for image slider */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 14px;
+}
+  
+.prev,.next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+  
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+  
+  
+.dot {
+    cursor: pointer;
+    height: 8px;
+    width: 8px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+
+}
+
+
+/* mega menu */
+/* Basic styling for the mega menu */
+.mega-menu {
+  position: relative;
+}
+
+.mega-menu-content {
+  display: none;
+  position: fixed;
+  top: 60px; /* Adjust this value to position the dropdown correctly under the header */
+  left: 0;
+  width: 100%; /* Set the width to cover the entire page */
+  background-color: #f9f9f9;
+  padding: 10px;
+  z-index: 1;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow to the bottom of the mega menu */
+  opacity: 0; /* Initially, the menu is invisible */
+  pointer-events: none; /* Prevent clicks on invisible elements */
+  transition: opacity 0.2s ease-in-out; /* Add transition to make it smoother */
+}
+
+.mega-menu-content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  /* Set the width of the inner ul as needed to accommodate the content */
+}
+
+.mega-menu-content li {
+  margin-bottom: 5px;
+}
+
+/* Show the mega menu content on hover */
+.mega-menu:hover .mega-menu-content {
+  display: block;
+  opacity: 1; /* When hovering, make the menu visible */
+  pointer-events: auto; /* Allow clicks on the visible menu */
+}
+
+
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+       <div class="header">
+        <ul class="nav-links">
+          <li><a href="https://apple-by-talha.surge.sh/"><i class="fa-brands fa-apple" title="Home Page" ></i></a></li>
+          <li class="mega-menu">
+            <a href="#" id="dp-1">Store</a>
+            <div class="mega-menu-content">
+              <ul>
+                <li><a href="#">MacBook</a></li>
+                <li><a href="#">iMac</a></li>
+                <li><a href="#">Mac Pro</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="mega-menu">
+            <a href="#">Mac</a>
+            <div class="mega-menu-content">
+              <ul>
+                <li><a href="#">MacBook Air</a></li>
+                <li><a href="#">MacBook Pro</a></li>
+              </ul>
+            </div>
+          </li>
+          <li><a href="#">iPad</a></li>
+          <li><a href="#">iPhone</a></li>
+          <li><a href="#">Watch</a></li>
+          <li><a href="#">Vision</a></li>
+          <li><a href="#">AirPods</a></li>
+          <li><a href="#">TV & Home</a></li>
+          <li><a href="#">Entertainment</a></li>
+          <li><a href="#">Accessories</a></li>
+          <li><a href="#">Support</a></li>
+          <li><i class="fa-solid fa-magnifying-glass"></i></li>
+          <li><i class="fa-solid fa-bag-shopping"></i></li>
+        </ul>
+      </div>
+      
+
+
+
+    <div  class="trade-reward"><p>Get $200–$640 in credit toward iPhone 14 or iPhone 14 Pro when you trade in iPhone 11 or higher.<a href="rules" style="text-decoration: none;"><sup>1</sup></a><a href="#">Shop iPhone<i class="fa-solid fa-greater-than"></i></a></p>
+    </div>
+
+    <div class="messi-banner">
+        <video class="background-video" autoplay loop muted>
+            <source src="./Assests/videos/messi.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        <div class="messi-banner-content">
+            <img src="./Assests/images/hero_logo_apple_tv_season_pass__igiz49b7ebee_large.png" alt="">
+            <img src="./Assests/images/hero_logo_messi__cuf92y4thwya_large.png" alt="">
+            <a href="#" class="banner-content-a">Watch tonight Apple TV at 8 p.m. ET<i class="fa-solid fa-greater-than"></i></a>
+        </div>
+    </div>
+
+    <div class="banner">
+        <div class="banner-content">
+            <h1 class="banner-content-h1">iPhone 14 Pro</h1>
+            <p class="banner-content-p">Pro. Beyond.</p>
+            <a href="#" class="banner-content-a">Learn more<i class="fa-solid fa-greater-than"></i></a>
+            <a href="#" class="banner-content-a">Buy<i class="fa-solid fa-greater-than"></i></a>
+        </div>
+    </div>
+        
+    <div class="banner2">
+        <div class="banner2-content">
+            <h1 class="banner-content-h1">iPhone 14</h1>
+            <p class="banner-content-p">Wonderfull.</p>
+            <a href="#" class="banner-content-a">Learn more<i class="fa-solid fa-greater-than"></i></a>
+            <a href="#" class="banner-content-a">Buy<i class="fa-solid fa-greater-than"></i></a>
+        </div>
+    </div>
+        
+    <div class="banner3">
+        <div class="banner3-content">
+            <p class="banner-content-p">Apple at work presents</p>
+            <img src="./Assests/images/logo_swiped_hero.png" alt="">
+            <p class="banner-content-p">Best-in-class security for worst-case scenarios</p>
+            <a href="#" class="banner3-content-a">Learn more<i class="fa-solid fa-greater-than"></i></a>
+            <a href="#" class="banner3-content-a">Watch the film<i class="fa-solid fa-circle-play" style="font-size: 20px;"></i></a>
+        </div>
+    </div>
+    
+
+    <div class="banners-container">
+    
+        <div class="banner-box box1">
+        <div class="banner-box-content1">
+            <h1 class="banner-box-title">MacBook Air 15"</h1>
+            <p class="banner-content-p">Impressively big. Impressively thin.</p>
+            <a href="#" class="banner-content-a">Learn more<i class="fa-solid fa-greater-than"></i></a>
+            <a href="#" class="banner-content-a">Buy<i class="fa-solid fa-greater-than"></i></a>
+        </div>
+    </div>
+
+    <div class="banner-box box2">
+        <div class="banner-box-content2">
+            <img src="./Assests/images/promo_logo_apple_vision_pro.png" alt="">
+            <p class="banner-content-p">Welcome to the area of spatial computing.</p>
+            <p id="box-p">Available early nezt year in the U.S.</p>
+            <a href="#" class="banner-content-a">Learn more<i class="fa-solid fa-greater-than"></i></a>
+        </div>
+    </div>
+
+    <div class="banner-box box3">
+        <div class="banner-box-content1">
+            <img src="./Assests/images/promo_logo_apple_watch_series_8.png" alt="">
+            <p class="banner-content-p" style="color: white;">A healty lead ahead.</p>
+            <a href="#" class="banner-content-a">Learn more<i class="fa-solid fa-greater-than"></i></a>
+            <a href="#" class="banner-content-a">Buy<i class="fa-solid fa-greater-than"></i></a>
+        </div>
+    </div>
+
+    <div class="banner-box box4">
+        <div class="banner-box-content1">
+            <h1 class="banner-box-title">Save on Mac or iPad <br> for college.</h1>
+            <p class="banner-content-p">Plus get a gift card upto &#36;150<sup>2</sup></p>
+            <a href="#" class="banner-content-a">Shop now<i class="fa-solid fa-greater-than"></i></a>
+</div>
+    </div>
+
+    <div class="banner-box box5">
+        <div class="banner-box-content1">
+            <h1 style="color: white; font-size: 40px;">iPad Pro</h1>
+            <p class="banner-content-p" style="color: white;">Supercherged by <img src="./Assests/images/promo_m2_chip.png"></p>
+            <a href="#" class="banner-content-a">Learn more<i class="fa-solid fa-greater-than"></i></a>
+            <a href="#" class="banner-content-a">Buy<i class="fa-solid fa-greater-than"></i></a>
+        </div>
+    </div>
+
+    <div class="banner-box box6">
+
+        <div class="banner-box-content1">
+            <img src="./Assests/images/logo__dcojfwkzna2q_large.png" alt="">
+            <p class="banner-content-p">Upgrade and save. it's that easy</p>
+            <a href="#" class="banner-content-a">See what your device is worth<i class="fa-solid fa-greater-than"></i></a>
+        </div>
+    </div>
+    
+    </div>
+
+
+    <!-- image slider -->
+    
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="./Assests/images/980x551 (1).jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="./Assests/images/980x551 (2).jpg" style="width:100%">
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="./Assests/images/980x551 (3).jpg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="./Assests/images/980x551 (4).jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="./Assests/images/980x551 (5).jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="./Assests/images/980x551 (6).jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="./Assests/images/980x551 (7).jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="./Assests/images/980x551 (8).jpg" style="width:100%">
+          </div>
+          <div class="mySlides fade">
+            <img src="./Assests/images/980x551 (9).jpg" style="width:100%">
+          </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+          <span class="dot" onclick="currentSlide(4)"></span> 
+          <span class="dot" onclick="currentSlide(5)"></span> 
+          <span class="dot" onclick="currentSlide(6)"></span> 
+          <span class="dot" onclick="currentSlide(7)"></span> 
+          <span class="dot" onclick="currentSlide(8)"></span>
+          <span class="dot" onclick="currentSlide(9)"></span>
+        </div>
+
+
+
+
+
+
+
+    <div class="footer">
+        <div class="rules">
+            <p>1. Trade-in values will vary based on the condition, year, and configuration of your eligible trade-in device. Not all devices are eligible for credit. You must be at least 18 years old to be eligible to trade in for credit or for an Apple Gift Card. Trade-in value may be applied toward qualifying new device purchase, or added to an Apple Gift Card. Actual value awarded is based on receipt of a qualifying device matching the description provided when estimate was made. Sales tax may be assessed on full value of a new device purchase. In-store trade-in requires presentation of a valid photo ID (local law may require saving this information). Offer may not be available in all stores, and may vary between in-store and online trade-in. Some stores may have additional requirements. Apple or its trade-in partners reserve the right to refuse or limit quantity of any trade-in transaction for any reason. More details are available from Apple’s trade-in partner for trade-in and recycling of eligible devices. Restrictions and limitations may apply.</p>
+            <p>2. Qualified Purchasers receive an Apple Gift Card when they purchase an eligible Mac or iPad at a Qualifying Location. Only one Apple Gift Card per eligible Mac or iPad per Qualified Purchaser. Offer subject to availability. While supplies last. View full terms and conditions of offer <a href="#" id="a-color-gray">here</a>.</p>
+            <p>Apple Vision Pro has not been authorized as required by the rules of the Federal Communications Commission. This device is not, and may not be, offered for sale or lease, or sold or leased, until authorization is obtained.</p>
+            <p>Apple Vision Pro will be available early next year on <a href="#" id="a-color-gray">apple.com</a> and at Apple retail stores in the U.S.</p>
+            <p>A subscription is required for Apple TV+.</p>
+            <p>Major League Baseball trademarks and copyrights are used with permission of MLB Advanced Media, L.P. All rights reserved.</p>
+            <hr>
+        </div>
+        <div class="footer-links">
+                <div class="columns-contaner">
+                    <div class="column1">
+                        <h4>Shop and Learn</h4>
+                        <a href="#" class="block-a">Store</a>
+                        <a href="#" class="block-a">Mac</a>
+                        <a href="#" class="block-a">iPad</a>
+                        <a href="#" class="block-a">iPhone</a>
+                        <a href="#" class="block-a">Watch</a>
+                        <a href="#" class="block-a">Vision</a>
+                        <a href="#" class="block-a">AirPods</a>
+                        <a href="#" class="block-a">TV & Home</a>
+                        <a href="#" class="block-a">AirTag</a>
+                        <a href="#" class="block-a">Accessories</a>
+                        <a href="#" class="block-a">Gift Cards</a>
+                    </div>
+
+                    <div class="column2">
+                        <h4>Apple Wallet</h4>
+                        <a href="#" class="block-a">Wallet</a>
+                        <a href="#" class="block-a">Apple Card</a>
+                        <a href="#" class="block-a">Apple Pay</a>
+                        <a href="#" class="block-a">Apple Cash</a>
+                    </div>
+
+                    <div class="column3">
+                        <h4>Account</h4>
+                        <a href="#" class="block-a">Manage Your Apple ID</a>
+                        <a href="#" class="block-a">Apple Store Account</a>
+                        <a href="#" class="block-a">iCloud.com</a>
+                    </div>
+
+                    <div class="column4">
+                        <h4>Entertainment</h4>
+                        <a href="#" class="block-a">Apple One</a>
+                        <a href="#" class="block-a">Apple TV+</a>
+                        <a href="#" class="block-a">Apple Music</a>
+                        <a href="#" class="block-a">Apple Arcade</a>
+                        <a href="#" class="block-a">Apple Fitness+</a>
+                        <a href="#" class="block-a">Apple News+</a>
+                        <a href="#" class="block-a">Apple Podcasts</a>
+                        <a href="#" class="block-a">Apple Books</a>
+                        <a href="#" class="block-a">App Store</a>
+                    </div>
+
+                    <div class="column5">
+                        <h4>Apple Store</h4>
+                        <a href="#" class="block-a">Find a Store</a>
+                        <a href="#" class="block-a">Genius Bar</a>
+                        <a href="#" class="block-a">Today at Apple</a>
+                        <a href="#" class="block-a">Apple Camp</a>
+                        <a href="#" class="block-a">Apple Store App</a>
+                        <a href="#" class="block-a">Certified Refurbished</a>
+                        <a href="#" class="block-a">Apple Trade In</a>
+                        <a href="#" class="block-a">Financing</a>
+                        <a href="#" class="block-a">Carrier Deals at Apple</a>
+                        <a href="#" class="block-a">Order Status</a>
+                        <a href="#" class="block-a">Shopping Help</a>
+                    </div>
+                </div>
+
+            <div class="footer-end">
+                <p>More ways to shop: <a href="#">Find an Apple Store</a> or <a href="#">other retailer</a> near you. Or call 1-800-MY-APPLE.</p>
+                <hr>
+                <p id="copyright-para">Copyright © 2023 Apple Inc. All rights reserved.</p>
+                <a href="#" class="footer-end-link">Privacy Policy</a>
+                <a href="#" class="footer-end-link">Terms of Use</a>
+                <a href="#" class="footer-end-link">Sales and Refunds</a>
+                <a href="#" class="footer-end-link">Legal</a>
+                <a href="#" class="footer-end-link">Site Map</a>
+                <a href="#" title="Chose your country or region"  class="footer-end-link" style="margin-left: 200px;">Pakistan</a>
+            </div>
+        </div>
+
+
+
+        <!-- script for image slider -->
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+}
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+}
+    
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+}
+
+
+
+// mega menu
+// Smooth slide down for the mega menu contents
+document.querySelectorAll('.mega-menu').forEach(menuItem => {
+  menuItem.addEventListener('mouseenter', () => {
+    menuItem.querySelector('.mega-menu-content').style.display = 'block';
+  });
+
+  menuItem.addEventListener('mouseleave', () => {
+    menuItem.querySelector('.mega-menu-content').style.display = 'none';
+  });
+});
+
+
+
+
+</script>
+        
+</body>
+</html>
