@@ -1,15 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+
+    <div class="container">
+        <header>
+            <h1>Task List</h1>
+            <div class="new-tasks">
+                <input type="text" id="new-task-input" placeholder="What are you plaining?" autofocus>
+                <input type="submit" id="add-new-task" value="Add Task">
+            </div>
+        </header>
+
+        <main>
+                <h3>Tasks</h3>
+                <div class="task-list">
+                    
+                    <div class="task">
+                        <input type="text" value="A rondom task" readonly>
+                        <div class="actions">
+                            <button id="edit">Edit</button>
+                            <button id="delete">Delete</button>
+                        </div>
+                    </div>
+        
+                </div>
+        </main>
+    </div>
 
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
