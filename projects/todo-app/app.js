@@ -122,7 +122,7 @@ function displayTodos(){
 
         const { item_el } = createTodoEle(item);
 
-        todosList.append(item_els);
+        todosList.append(item_el);
 
     }
 

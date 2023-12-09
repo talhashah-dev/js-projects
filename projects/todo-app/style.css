@@ -14,8 +14,8 @@ button{
 }
 
 body{
-    background-color: #242948;
-    color: #fff;
+    background-color: #fff;
+    color: #000
 }
 
 main{
@@ -38,17 +38,30 @@ main{
 }
 
 .tasks header h1{
-    color: #fff;
+    color: #000;
     font-size: 24px;
     font-weight: 400;
 }
 
 .tasks header button{
-    color: #fff;
+    color: red;
     font-size: 18px;
-    border-bottom: 2px solid #fff;
     text-transform: uppercase;
+    border: 2px solid #fff;
+    padding: 5px;
+    border-radius: 4px;
+    transition: all 0.2s;
 }
+
+.tasks header button:hover{
+    border: 2px solid red;
+    border-radius: 4px;
+}
+
+.tasks header button:active{
+    scale: 0.9;
+}
+
 
 .item{
     display: flex;
@@ -56,8 +69,9 @@ main{
     justify-content: space-between;
     padding: 24px;
     border-radius: 0.5rem;
-    background-color: #1e223d;
+    background-color: #fff;
     margin-bottom: 1.5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .item:last-of-type{
@@ -75,14 +89,14 @@ main{
     border: none;
     outline: none;
     font-weight: 400;
-    color: #fff;
+    color: #000;
     font-size: 20px;
     flex: 1 1 0%;
     margin-right: 1rem;
 }
 
 .item input[type="text"]:not(:disabled){
-    border-bottom: 2px solid #fff;
+    border-bottom: 2px solid #000;
 }
 
 .item.complete{
@@ -95,11 +109,11 @@ main{
 
 .item:hover,
 .item:focus-within{
-    outline: 2px solid #fff;
+    outline: 2px solid #000;
 }
 
 .actions button{
-    color: #fff;
+    color: #000;
     margin-right: 1rem;
     opacity: 0.7;
     transform: 0.1s;
