@@ -8,35 +8,27 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-
+  <body>
     <main>
+      <div class="tasks">
+        <header>
+          <h1>Your Tasks</h1>
+          <button id="create">Add Task</button>
+        </header>
 
-        <div class="tasks">
+        <div class="task-list" id="list">
 
-            <header>
-                <h1>Your Tasks</h1>
-                <button id="create">Add Task</button>
-            </header>
-            
-            <div class="task-list" id="list">
-
-                <div class="item complete">
-                    <input type="checkbox" />
-                    <input type="text" 
-                    value="task content goes here"
-                    disabled />
-                    <div class="actions">
-                        <button class="material-symbols-outlined">edit</button>
-                        <button class="material-symbols-outlined remove">delete</button>
-                    </div>
-                </div>
-
-
-
+          <!-- <div class="item">
+            <input type="checkbox" />
+            <input type="text" value="task content goes here" disabled />
+            <div class="actions">
+              <button class="material-symbols-outlined">edit</button>
+              <button class="material-symbols-outlined remove">delete</button>
             </div>
-
+          </div> -->
+          
         </div>
-
+      </div>
     </main>
 
     <script src="app.js"></script>
