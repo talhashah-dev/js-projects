@@ -26,15 +26,6 @@ function createNewTodo(){
     
 };
 
-    /* <div class="item">
-    <input type="checkbox" />
-    <input type="text" value="task content goes here" disabled />
-    <div class="actions">
-    <button class="material-symbols-outlined">edit</button>
-    <button class="material-symbols-outlined remove">delete</button>
-    </div>
-    </div> */
-
 function createTodoEle(item){
     const item_el = document.createElement("div");
     item_el.classList.add("item");
@@ -145,3 +136,11 @@ function Load(){
         todos = JSON.parse(data);
     }
 }
+
+
+// Dark Mode
+
+function dark_mode() {
+    let darkMode = document.body;
+    darkMode.classList.toggle("dark-mode");
+ }

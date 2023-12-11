@@ -43,6 +43,13 @@ main{
     font-weight: 400;
 }
 
+header span:nth-child(2){
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+
 .tasks header button{
     color: red;
     font-size: 18px;
@@ -96,7 +103,7 @@ main{
 }
 
 .item input[type="text"]:not(:disabled){
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid red;
 }
 
 .item.complete{
@@ -109,7 +116,7 @@ main{
 
 .item:hover,
 .item:focus-within{
-    outline: 2px solid #000;
+    outline: 2px solid red;
 }
 
 .actions button{
@@ -129,5 +136,13 @@ main{
 
 .actions button:last-of-type{
     margin-right: 0;
+}
+
+
+/* Dark Mode */
+
+.dark-mode{
+    background-color: #000;
+    color: #fff;
 }
 
