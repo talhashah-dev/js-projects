@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todo List App</title>
+    <link rel="shortcut icon" href="./assests/images/favicon.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Firebase-links -->
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="tasks">
+        <header>
+          <span>
+            <h1>Your Tasks</h1>
+          </span>
+          <span>
+            <img src="./assests/images/dark_mode.svg" alt="Dark Mode Toggle" id="dark_mode_btn" title="Dark Mode" onclick="dark_mode()">
+            <button id="create" title="press to add a new task">Add Task</button>
+          </span>
+        </header>
+
+        <div class="task-list" id="list">
+
+          <!-- <div class="item">
+            <input type="checkbox" />
+            <input type="text" value="task content goes here" disabled />
+            <div class="actions">
+              <button class="material-symbols-outlined">edit</button>
+              <button class="material-symbols-outlined remove">delete</button>
+            </div>
+          </div> -->
+          
+        </div>
+      </div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>

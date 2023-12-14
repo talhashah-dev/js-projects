@@ -144,3 +144,17 @@ function dark_mode() {
     let darkMode = document.body;
     darkMode.classList.toggle("dark-mode");
  }
+
+
+//  FireBase-SDk
+const firebaseConfig = {
+  apiKey: "AIzaSyD8oraQLWEYSpqqXyaWoeSWew-rCLvYmPE",
+  authDomain: "todo-app-a4936.firebaseapp.com",
+  projectId: "todo-app-a4936",
+  storageBucket: "todo-app-a4936.appspot.com",
+  messagingSenderId: "700777034834",
+  appId: "1:700777034834:web:8a6320a66880ca79469b8b",
+  measurementId: "G-SWP9WSGS7N"
+};
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
