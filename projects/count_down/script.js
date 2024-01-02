@@ -1,5 +1,5 @@
 function updateCountdown() {
-    const countDownDate = new Date("January 1, 2024 00:00:00").getTime();
+    const countDownDate = new Date("January 1, 2025 00:00:00").getTime();
     const now = new Date().getTime();
     const timeDifference = countDownDate - now;
   
@@ -16,7 +16,6 @@ function updateCountdown() {
     const currentSeconds = parseInt(secondsElement.innerText);
   
     if (currentSeconds !== seconds) {
-    //   secondsElement.style.opacity = 0;
       setTimeout(() => {
         secondsElement.innerText = seconds; 
         secondsElement.style.opacity = 1;
