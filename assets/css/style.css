@@ -25,13 +25,13 @@ html {
   overflow-x: hidden;
 }
 html::-webkit-scrollbar {
-  width: 0.7rem;
+  width: 1rem;
 }
 html::-webkit-scrollbar-track {
   background: rgb(175, 175, 175);
 }
 html::-webkit-scrollbar-thumb {
-  background: #ff7300;
+  background: #202020;
 }
 
 body {
@@ -749,8 +749,8 @@ header a.conbtn:hover {
   right: 2rem;
   padding: 1rem 1.5rem;
   font-size: 2rem;
-  background: #ffae00;
-  color: rgb(13, 0, 44);
+  background: #494948;
+  color: rgb(255, 255, 255);
   border-radius: 50%;
   transition: 0.5s ease-in;
   z-index: 1000;
